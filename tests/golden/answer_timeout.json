@@ -1,0 +1,5 @@
+{
+	"players": [{"id": 1, "point": 0, "miss": false}],
+	"answering_player_id": 1,
+	"expected": {"id": 1, "point": 0, "miss": true}
+}

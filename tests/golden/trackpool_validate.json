@@ -1,0 +1,12 @@
+{
+	"cases": [
+		{"unique_count": 0, "q_count": 0, "expected": "TOO_FEW_TRACKS"},
+		{"unique_count": 1, "q_count": 10, "expected": "TOO_FEW_TRACKS"},
+		{"unique_count": 2, "q_count": 2, "expected": "NOT_ENOUGH_TRACKS"},
+		{"unique_count": 4, "q_count": 2, "expected": "NOT_ENOUGH_TRACKS"},
+		{"unique_count": 5, "q_count": 5, "expected": null},
+		{"unique_count": 5, "q_count": 10, "expected": "NOT_ENOUGH_TRACKS"},
+		{"unique_count": 10, "q_count": 5, "expected": null},
+		{"unique_count": 10, "q_count": 10, "expected": null}
+	]
+}

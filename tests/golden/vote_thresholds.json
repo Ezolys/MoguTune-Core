@@ -1,0 +1,13 @@
+{
+	"threshold_ratio": 0.5,
+	"active_players": 5,
+	"steps": [
+		{"action": "NEXT", "vote": {"action": "NEXT", "user": 1}, "expected_votes": 1, "should_advance": false},
+		{"action": "NEXT", "vote": {"action": "NEXT", "user": 2}, "expected_votes": 2, "should_advance": false},
+		{"action": "NEXT", "vote": {"action": "NEXT", "user": 3}, "expected_votes": 3, "should_advance": true},
+		{"action": "NEXT", "vote": {"action": "NEXT", "user": 1}, "expected_votes": 3, "should_advance": true},
+		{"action": "NEXT", "unvote": {"user": 1}, "expected_votes": 2, "should_advance": false},
+		{"action": "SKIP", "vote": {"action": "SKIP", "user": 4}, "expected_votes": 1, "should_advance": false},
+		{"action": "NEXT", "reset": {}, "expected_votes": 0, "should_advance": false}
+	]
+}

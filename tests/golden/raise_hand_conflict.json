@@ -1,0 +1,12 @@
+{
+	"state": {
+		"current_track_uri": "https://example.com/a",
+		"can_answer": true,
+		"answering_player_id": null
+	},
+	"players": [1, 2],
+	"sequence": [
+		{"actor": 1, "expected": "PLAYER", "player_id": 1},
+		{"actor": 2, "expected": "ALREADY_ANSWERING"}
+	]
+}

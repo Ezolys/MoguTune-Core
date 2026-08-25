@@ -1,0 +1,16 @@
+{
+	"players": [
+		{"id": 1, "miss": true},
+		{"id": 2, "miss": false}
+	],
+	"checks": [
+		{"actor": 1, "expected": "MISS"},
+		{"actor": 2, "expected": "PLAYER", "player_id": 2}
+	],
+	"single_player": {
+		"players": [{"id": 3, "miss": true}],
+		"actor": 3,
+		"expected": "PLAYER",
+		"player_id": 3
+	}
+}
