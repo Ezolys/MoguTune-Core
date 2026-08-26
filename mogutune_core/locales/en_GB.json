@@ -118,6 +118,8 @@
 		"activity.lobby.language.ja": "日本語",
 		"activity.lobby.language.en": "English",
 		"activity.lobby.no_participants": "No participants",
+		"activity.lobby.ready": "Ready",
+		"activity.lobby.ready_done": "Ready! Waiting for the quiz to start...",
 		"activity.common.you": "you",
 		"activity.common.miss": "Miss",
 		"activity.common.answering": "Answering",

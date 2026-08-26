@@ -118,6 +118,8 @@
 		"activity.lobby.language.ja": "日本語",
 		"activity.lobby.language.en": "English",
 		"activity.lobby.no_participants": "参加者がいません",
+		"activity.lobby.ready": "準備完了",
+		"activity.lobby.ready_done": "準備完了！開始を待っています...",
 		"activity.common.you": "あなた",
 		"activity.common.miss": "お手つき",
 		"activity.common.answering": "解答中",
