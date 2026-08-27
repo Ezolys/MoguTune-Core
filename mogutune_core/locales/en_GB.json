@@ -145,7 +145,11 @@
 		"activity.error.limit_reached": "The session limit has been reached, so no more quizzes can be started.",
 		"activity.error.not_playing": "No track is currently playing!",
 		"activity.error.connection_lost": "Connection lost. Reconnecting...",
-		"activity.error.mode_not_available": "This progression mode is not available yet."
+		"activity.error.mode_not_available": "This progression mode is not available yet.",
+		"activity.error.not_in_voice_channel": "Please launch the activity from a voice channel.",
+		"activity.error.voice_join_failed": "Failed to connect to the voice channel.",
+		"activity.error.playback_failed": "Failed to play the track.",
+		"activity.error.already_started": "A quiz is already in progress in this server."
 	},
 	"commands": {
 		"ping": {
