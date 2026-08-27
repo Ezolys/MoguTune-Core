@@ -9,7 +9,6 @@ description = "MoguTune quiz core logic (I/O free)"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "pydantic>=2.0.0",
     "pymongo>=4.17.0",
 ]
 
