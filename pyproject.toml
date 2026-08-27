@@ -6,7 +6,6 @@ build-backend = "hatchling.build"
 name = "mogutune-core"
 version = "0.1.0"
 description = "MoguTune quiz core logic (I/O free)"
-readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "pymongo>=4.17.0",
