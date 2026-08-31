@@ -59,6 +59,11 @@
 		"cmd.sessions.result.current": "Live quiz session",
 		"cmd.sessions.result.limit_none": "Unlimited",
 		"cmd.sessions.result.last_update": "Last Update",
+		"cmd.settings.show.title": "Quiz Settings",
+		"cmd.settings.show.no_items": "There are no configurable items yet.",
+		"cmd.settings.set.no_items": "There are no configurable items yet.",
+		"cmd.settings.set.no_options": "Please specify an item to change.",
+		"cmd.settings.set.updated": "Settings updated.",
 		"ctxcmd.play.no_valid_url": "No valid URL found in the message.",
 		"view.q.join.label": "Join Quiz",
 		"view.q.join.msg.session_not_found": "The quiz you tried to join has already ended.",
@@ -144,6 +149,18 @@
 		"sessions": {
 			"name": "sessions",
 			"description": "Displays the number of quiz sessions currently being run by this bot."
+		},
+		"settings": {
+			"name": "settings",
+			"description": "Displays and changes quiz settings."
+		},
+		"settings show": {
+			"name": "show",
+			"description": "Displays the current settings."
+		},
+		"settings set": {
+			"name": "set",
+			"description": "Changes quiz settings."
 		}
 	},
 	"context_menus": {

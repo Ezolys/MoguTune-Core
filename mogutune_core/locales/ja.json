@@ -59,6 +59,11 @@
 		"cmd.sessions.result.current": "実行中のクイズセッション",
 		"cmd.sessions.result.limit_none": "無制限",
 		"cmd.sessions.result.last_update": "最終更新",
+		"cmd.settings.show.title": "クイズ設定",
+		"cmd.settings.show.no_items": "現在設定できる項目はありません。",
+		"cmd.settings.set.no_items": "現在設定できる項目はありません。",
+		"cmd.settings.set.no_options": "変更する項目を指定してください。",
+		"cmd.settings.set.updated": "設定を更新しました。",
 		"ctxcmd.play.no_valid_url": "メッセージ内に有効なURLが見つかりませんでした。",
 		"view.q.join.label": "クイズに参加",
 		"view.q.join.msg.session_not_found": "参加しようとしたクイズは既に終了しています。",
@@ -144,6 +149,18 @@
 		"sessions": {
 			"name": "sessions",
 			"description": "現在のこのボットが実行しているクイズのセッション数を表示します。"
+		},
+		"settings": {
+			"name": "settings",
+			"description": "クイズの設定を表示・変更します。"
+		},
+		"settings show": {
+			"name": "show",
+			"description": "現在の設定を表示します。"
+		},
+		"settings set": {
+			"name": "set",
+			"description": "設定を変更します。"
 		}
 	},
 	"context_menus": {
