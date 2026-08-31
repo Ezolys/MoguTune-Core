@@ -64,6 +64,9 @@
 		"cmd.settings.set.no_items": "There are no configurable items yet.",
 		"cmd.settings.set.no_options": "Please specify an item to change.",
 		"cmd.settings.set.updated": "Settings updated.",
+		"cmd.settings.item.artist_in_answers": "Include artist names in answer choices",
+		"cmd.settings.value.enabled": "On",
+		"cmd.settings.value.disabled": "Off",
 		"ctxcmd.play.no_valid_url": "No valid URL found in the message.",
 		"view.q.join.label": "Join Quiz",
 		"view.q.join.msg.session_not_found": "The quiz you tried to join has already ended.",
@@ -160,7 +163,13 @@
 		},
 		"settings set": {
 			"name": "set",
-			"description": "Changes quiz settings."
+			"description": "Changes quiz settings.",
+			"options": {
+				"artist_in_answers": {
+					"name": "artist_in_answers",
+					"description": "Whether to include artist names in answer choices [Default: Off]"
+				}
+			}
 		}
 	},
 	"context_menus": {

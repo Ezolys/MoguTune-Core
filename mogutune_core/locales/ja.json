@@ -64,6 +64,9 @@
 		"cmd.settings.set.no_items": "現在設定できる項目はありません。",
 		"cmd.settings.set.no_options": "変更する項目を指定してください。",
 		"cmd.settings.set.updated": "設定を更新しました。",
+		"cmd.settings.item.artist_in_answers": "解答候補にアーティスト名を含める",
+		"cmd.settings.value.enabled": "オン",
+		"cmd.settings.value.disabled": "オフ",
 		"ctxcmd.play.no_valid_url": "メッセージ内に有効なURLが見つかりませんでした。",
 		"view.q.join.label": "クイズに参加",
 		"view.q.join.msg.session_not_found": "参加しようとしたクイズは既に終了しています。",
@@ -160,7 +163,13 @@
 		},
 		"settings set": {
 			"name": "set",
-			"description": "設定を変更します。"
+			"description": "設定を変更します。",
+			"options": {
+				"artist_in_answers": {
+					"name": "artist_in_answers",
+					"description": "解答の選択肢にアーティスト名を含めるか [デフォルト: オフ]"
+				}
+			}
 		}
 	},
 	"context_menus": {
