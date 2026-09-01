@@ -41,6 +41,26 @@
 		"cmd.play.not_a_playlist_url": "プレイリストのURLを指定してください。",
 		"cmd.play.tracks_fetch_error": "プレイリストの取得に失敗しました。しばらくしてからもう一度お試しください。\n(この問題が解消しない場合は、開発者へ報告してください。)",
 		"cmd.play.query_preset": "プリセット",
+		"cmd.play.query_playlist": "プレイリスト",
+		"cmd.play.playlist_not_found": "指定されたプレイリストが見つかりませんでした。",
+		"cmd.playlist.new.created": "プレイリストを作成しました！\n- 名前: **{0}**\n- 曲数: `{1}` 曲",
+		"cmd.playlist.new.created_empty": "空のプレイリストを作成しました！\n- 名前: **{0}**\n- 曲数: `0` 曲\n(`playlist add` で楽曲を追加できます)",
+		"cmd.playlist.add.result": "プレイリストに楽曲を追加しました。\n- 追加: `{0}` 曲\n- スキップ: `{1}` 曲",
+		"cmd.playlist.add.error.no_valid_tracks": "有効な楽曲が見つかりませんでした。\n単一トラックのURLを指定してください。",
+		"cmd.playlist.edit.updated": "プレイリストを更新しました！",
+		"cmd.playlist.edit.nothing_specified": "変更する項目を指定してください。",
+		"cmd.playlist.delete.deleted": "プレイリストを削除しました。",
+		"cmd.playlist.detail.title": "プレイリスト詳細",
+		"cmd.playlist.detail.name": "名前",
+		"cmd.playlist.detail.description": "説明",
+		"cmd.playlist.detail.author": "作成者",
+		"cmd.playlist.detail.created_at": "作成日",
+		"cmd.playlist.detail.track_count": "曲数",
+		"cmd.playlist.detail.tracks_empty": "楽曲が登録されていません。",
+		"cmd.playlist.detail.tracks_more": "他 {0} 曲...",
+		"cmd.playlist.error.not_found": "指定されたプレイリストが見つかりませんでした。",
+		"cmd.playlist.error.guild_limit": "サーバーごとのプレイリスト上限 (50個) に達しているため、これ以上作成できません。",
+		"cmd.playlist.error.track_limit": "1つのプレイリストに登録できる楽曲数は最大500曲です。",
 		"cmd.play.query_url_label": "{0} ({1})",
 		"cmd.play.query_url_type.playlist": "プレイリスト",
 		"cmd.play.query_url_type.album": "アルバム",
@@ -170,6 +190,84 @@
 				"artist_in_answers": {
 					"name": "artist_in_answers",
 					"description": "解答の選択肢にアーティスト名を含めるか [デフォルト: オフ]"
+				}
+			}
+		},
+		"playlist": {
+			"name": "playlist",
+			"description": "プレイリストを管理します。"
+		},
+		"playlist new": {
+			"name": "new",
+			"description": "プレイリストを新規作成します。",
+			"options": {
+				"uri": {
+					"name": "uri",
+					"description": "取り込む既存プレイリストのURL (YouTube, Spotify, SoundCloud)"
+				},
+				"tracks": {
+					"name": "tracks",
+					"description": "追加する楽曲のURL (半角スペース区切りで複数指定可)"
+				},
+				"name": {
+					"name": "name",
+					"description": "プレイリストの名前"
+				},
+				"description": {
+					"name": "description",
+					"description": "プレイリストの説明"
+				}
+			}
+		},
+		"playlist add": {
+			"name": "add",
+			"description": "プレイリストに楽曲を追加します。",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "追加対象のプレイリスト"
+				},
+				"urls": {
+					"name": "urls",
+					"description": "追加する楽曲のURL (半角スペース区切りで複数指定可)"
+				}
+			}
+		},
+		"playlist edit": {
+			"name": "edit",
+			"description": "プレイリストの名前・説明を編集します。",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "編集対象のプレイリスト"
+				},
+				"name": {
+					"name": "name",
+					"description": "新しい名前"
+				},
+				"description": {
+					"name": "description",
+					"description": "新しい説明"
+				}
+			}
+		},
+		"playlist delete": {
+			"name": "delete",
+			"description": "プレイリストを削除します。",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "削除対象のプレイリスト"
+				}
+			}
+		},
+		"playlist detail": {
+			"name": "detail",
+			"description": "プレイリストの詳細を表示します。",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "表示対象のプレイリスト"
 				}
 			}
 		}

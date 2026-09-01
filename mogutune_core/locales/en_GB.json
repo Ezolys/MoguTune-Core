@@ -41,6 +41,26 @@
 		"cmd.play.not_a_playlist_url": "Please specify a playlist URL.",
 		"cmd.play.tracks_fetch_error": "Failed to fetch the playlist. Please try again after a while.\n(If this issue persists, please report it to the developer.)",
 		"cmd.play.query_preset": "Preset",
+		"cmd.play.query_playlist": "Playlist",
+		"cmd.play.playlist_not_found": "The specified playlist was not found.",
+		"cmd.playlist.new.created": "Playlist created!\n- Name: **{0}**\n- Tracks: `{1}`",
+		"cmd.playlist.new.created_empty": "Empty playlist created!\n- Name: **{0}**\n- Tracks: `0`\n(Add tracks with `playlist add`)",
+		"cmd.playlist.add.result": "Added tracks to the playlist.\n- Added: `{0}`\n- Skipped: `{1}`",
+		"cmd.playlist.add.error.no_valid_tracks": "No valid tracks found.\nPlease specify single-track URLs.",
+		"cmd.playlist.edit.updated": "Playlist updated!",
+		"cmd.playlist.edit.nothing_specified": "Please specify an item to change.",
+		"cmd.playlist.delete.deleted": "Playlist deleted.",
+		"cmd.playlist.detail.title": "Playlist Details",
+		"cmd.playlist.detail.name": "Name",
+		"cmd.playlist.detail.description": "Description",
+		"cmd.playlist.detail.author": "Author",
+		"cmd.playlist.detail.created_at": "Created",
+		"cmd.playlist.detail.track_count": "Tracks",
+		"cmd.playlist.detail.tracks_empty": "No tracks registered.",
+		"cmd.playlist.detail.tracks_more": "and {0} more...",
+		"cmd.playlist.error.not_found": "The specified playlist was not found.",
+		"cmd.playlist.error.guild_limit": "You have reached the per-server playlist limit (50). You cannot create any more.",
+		"cmd.playlist.error.track_limit": "A playlist can contain up to 500 tracks.",
 		"cmd.play.query_url_label": "{0} ({1})",
 		"cmd.play.query_url_type.playlist": "Playlist",
 		"cmd.play.query_url_type.album": "Album",
@@ -170,6 +190,84 @@
 				"artist_in_answers": {
 					"name": "artist_in_answers",
 					"description": "Whether to include artist names in answer choices [Default: Off]"
+				}
+			}
+		},
+		"playlist": {
+			"name": "playlist",
+			"description": "Manage playlists."
+		},
+		"playlist new": {
+			"name": "new",
+			"description": "Creates a new playlist.",
+			"options": {
+				"uri": {
+					"name": "uri",
+					"description": "URL of an existing playlist to import (YouTube, Spotify, SoundCloud)"
+				},
+				"tracks": {
+					"name": "tracks",
+					"description": "URLs of tracks to add (separate multiple URLs with spaces)"
+				},
+				"name": {
+					"name": "name",
+					"description": "Playlist name"
+				},
+				"description": {
+					"name": "description",
+					"description": "Playlist description"
+				}
+			}
+		},
+		"playlist add": {
+			"name": "add",
+			"description": "Adds tracks to a playlist.",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "Playlist to add tracks to"
+				},
+				"urls": {
+					"name": "urls",
+					"description": "URLs of tracks to add (separate multiple URLs with spaces)"
+				}
+			}
+		},
+		"playlist edit": {
+			"name": "edit",
+			"description": "Edits the name and description of a playlist.",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "Playlist to edit"
+				},
+				"name": {
+					"name": "name",
+					"description": "New name"
+				},
+				"description": {
+					"name": "description",
+					"description": "New description"
+				}
+			}
+		},
+		"playlist delete": {
+			"name": "delete",
+			"description": "Deletes a playlist.",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "Playlist to delete"
+				}
+			}
+		},
+		"playlist detail": {
+			"name": "detail",
+			"description": "Displays the details of a playlist.",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "Playlist to display"
 				}
 			}
 		}

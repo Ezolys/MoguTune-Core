@@ -25,8 +25,9 @@ class DBManager:
 	db: pymongo.asynchronous.database.AsyncDatabase
 	col_presets: pymongo.asynchronous.collection.AsyncCollection
 	col_guild_settings: pymongo.asynchronous.collection.AsyncCollection
+	col_playlists: pymongo.asynchronous.collection.AsyncCollection
 
-	# コレクションは presets / guild_settings (leaderboard / playlists は今回作らない。拡張余地)
+	# コレクションは presets / guild_settings / playlists (leaderboard は今回作らない。拡張余地)
 
 	@classmethod
 	async def connect(cls) -> None:
@@ -56,6 +57,7 @@ class DBManager:
 			cls.db = cls._client.get_database(db_name)
 			cls.col_presets = cls.db.get_collection(db_collection)
 			cls.col_guild_settings = cls.db.get_collection("guild_settings")
+			cls.col_playlists = cls.db.get_collection("playlists")
 		except errors.ConnectionFailure as e:
 			logger.exception("データベース接続失敗")
 			_raise_connection_error(_ERR_MSG_CONN_FAILED)
