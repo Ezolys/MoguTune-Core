@@ -32,5 +32,5 @@ uv run ruff format --check .      # フォーマット検証 (タブインデン
 
 ## その他
 
-- `db.py` の `DBManager` は環境変数 `DB_URI` / `DB_NAME` を読み、`AsyncMongoClient` を使用 (コレクションは presets のみ)。テストからは参照されない
+- `db.py` の `DBManager` は環境変数 `DB_URI` / `DB_NAME` を読み、`AsyncMongoClient` を使用 (コレクションは presets / guild_settings / playlists)。テストからは参照されない
 - 公開 API は `mogutune_core/__init__.py` の `__all__` を維持する
