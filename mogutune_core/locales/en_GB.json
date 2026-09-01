@@ -110,6 +110,8 @@
 		"msg.q.answering.already.title": "Already Answering!",
 		"msg.q.answering.already.description": "{0} is already answering!\n(Your answer time: `{1}` s)",
 		"msg.q.answering.not_playing.description": "No track is currently playing!",
+		"msg.q.answering.timeout.title": "Answer Time Up",
+		"msg.q.answering.timeout.description": "{0} ran out of time to answer...",
 		"msg.q.end.title": "Quiz Ended",
 		"msg.q.end.description": "<Results>\n{0}",
 		"msg.q.end.no_players": "No players... 🥲",
