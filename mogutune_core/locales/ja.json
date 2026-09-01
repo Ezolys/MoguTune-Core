@@ -56,6 +56,7 @@
 		"cmd.playlist.detail.author": "作成者",
 		"cmd.playlist.detail.created_at": "作成日",
 		"cmd.playlist.detail.track_count": "曲数",
+		"cmd.playlist.detail.tracks": "楽曲一覧",
 		"cmd.playlist.detail.tracks_empty": "楽曲が登録されていません。",
 		"cmd.playlist.detail.tracks_more": "他 {0} 曲...",
 		"cmd.playlist.error.not_found": "指定されたプレイリストが見つかりませんでした。",

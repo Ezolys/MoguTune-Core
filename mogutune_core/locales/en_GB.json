@@ -56,6 +56,7 @@
 		"cmd.playlist.detail.author": "Author",
 		"cmd.playlist.detail.created_at": "Created",
 		"cmd.playlist.detail.track_count": "Tracks",
+		"cmd.playlist.detail.tracks": "Track List",
 		"cmd.playlist.detail.tracks_empty": "No tracks registered.",
 		"cmd.playlist.detail.tracks_more": "and {0} more...",
 		"cmd.playlist.error.not_found": "The specified playlist was not found.",
