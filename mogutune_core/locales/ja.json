@@ -19,6 +19,7 @@
 		"cmd.end.ended": "{0} のクイズを終了しました。",
 		"cmd.end.quiz_not_started": "このサーバーではクイズが開始されていません。",
 		"cmd.end.do_not_have_permission": "あなたはこのクイズの主催者ではないため、終了することはできません！",
+		"cmd.end.stale_disconnected": "クイズは開始されていませんでしたが、ボイスチャンネルに残っていた接続を切断しました。",
 		"cmd.play.preparing.title": "準備中",
 		"cmd.play.preparing.description": "クイズの準備中です...\nしばらくお待ちください...",
 		"cmd.play.preparing_complete.title": "準備完了！",

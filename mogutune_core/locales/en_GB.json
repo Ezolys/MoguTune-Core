@@ -19,6 +19,7 @@
 		"cmd.end.ended": "The quiz in {0} has ended.",
 		"cmd.end.quiz_not_started": "No quiz has started on this server.",
 		"cmd.end.do_not_have_permission": "You are not the host of this quiz, so you cannot end it!",
+		"cmd.end.stale_disconnected": "No quiz was running, but the lingering voice connection has been disconnected.",
 		"cmd.play.preparing.title": "Preparing",
 		"cmd.play.preparing.description": "Preparing the quiz...\nPlease wait a moment...",
 		"cmd.play.preparing_complete.title": "Preparation Complete!",
