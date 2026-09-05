@@ -144,7 +144,20 @@
 		"msg.q.timeout.title": "Time Up",
 		"msg.q.timeout.description": "No one answered correctly.\n\n☑️ Answer: **{0}**\n\n**[🎧 Listen]({1})**",
 		"msg.q.playback_exception_skip.title": "Playback Error",
-		"msg.q.playback_exception_skip.description": "This question will be skipped because the track could not be played.\n\n☑️ Track: **{0}**\n\n**[🎧 Listen]({1})**"
+		"msg.q.playback_exception_skip.description": "The track could not be played, so this question will be skipped.\n\n☑️ Target track: **{0}**\n\n**[🎧 Listen]({1})**",
+		"view.q.ready_button.label": "Ready",
+		"view.q.ready_button.not_joined": "You have not joined this quiz, so you cannot ready!",
+		"view.q.ready_button.session_not_found": "The target quiz has already ended.",
+		"msg.q.ready.hint": "Press Ready when you're set. The quiz starts when {0} are ready.",
+		"msg.q.ready_timeout.title": "Start Cancelled",
+		"msg.q.ready_timeout.description": "Not enough players were ready in time, so the quiz could not be started.",
+		"view.q.next_q_button.not_joined": "You have not joined this quiz, so you cannot vote!",
+		"cmd.settings.item.progression_mode": "Progression (next / skip)",
+		"cmd.settings.progression_mode.host": "Host only",
+		"cmd.settings.progression_mode.vote": "Member vote (majority)",
+		"cmd.settings.item.ready_threshold": "Ready condition to start the quiz",
+		"cmd.settings.ready_threshold.all": "All participants",
+		"cmd.settings.ready_threshold.majority": "Majority"
 	},
 	"commands": {
 		"ping": {
@@ -192,6 +205,16 @@
 				"artist_in_answers": {
 					"name": "artist_in_answers",
 					"description": "Whether to include artist names in answer choices [Default: Off]"
+				},
+				"progression_mode": {
+					"name": "progression_mode",
+					"description": "How to advance to the next question / skip [Default: Member vote]",
+					"choices": { "host": "Host only", "vote": "Member vote (majority)" }
+				},
+				"ready_threshold": {
+					"name": "ready_threshold",
+					"description": "Ready condition required to start the quiz [Default: Majority]",
+					"choices": { "all": "All participants", "majority": "Majority" }
 				}
 			}
 		},

@@ -144,7 +144,20 @@
 		"msg.q.timeout.title": "タイムアップ",
 		"msg.q.timeout.description": "誰も正解できませんでした。\n\n☑️ 答え: **{0}**\n\n**[🎧 聴く]({1})**",
 		"msg.q.playback_exception_skip.title": "再生エラー",
-		"msg.q.playback_exception_skip.description": "楽曲を再生できなかったため、この問題をスキップします。\n\n☑️ 対象楽曲: **{0}**\n\n**[🎧 聴く]({1})**"
+		"msg.q.playback_exception_skip.description": "楽曲を再生できなかったため、この問題をスキップします。\n\n☑️ 対象楽曲: **{0}**\n\n**[🎧 聴く]({1})**",
+		"view.q.ready_button.label": "準備完了",
+		"view.q.ready_button.not_joined": "あなたはこのクイズに参加していないため、準備完了できません！",
+		"view.q.ready_button.session_not_found": "対象のクイズは既に終了しています。",
+		"msg.q.ready.hint": "準備ができたら準備完了ボタンを押してください。{0} が準備完了すると開始します。",
+		"msg.q.ready_timeout.title": "開始中止",
+		"msg.q.ready_timeout.description": "一定時間内に準備完了が揃わなかったため、クイズを開始できませんでした。",
+		"view.q.next_q_button.not_joined": "あなたはこのクイズに参加していないため、投票できません！",
+		"cmd.settings.item.progression_mode": "進行方式 (次の問題・スキップ)",
+		"cmd.settings.progression_mode.host": "主催者のみ",
+		"cmd.settings.progression_mode.vote": "参加者の投票 (過半数)",
+		"cmd.settings.item.ready_threshold": "クイズ開始の準備完了条件",
+		"cmd.settings.ready_threshold.all": "全員",
+		"cmd.settings.ready_threshold.majority": "過半数"
 	},
 	"commands": {
 		"ping": {
@@ -192,6 +205,16 @@
 				"artist_in_answers": {
 					"name": "artist_in_answers",
 					"description": "解答の選択肢にアーティスト名を含めるか [デフォルト: オフ]"
+				},
+				"progression_mode": {
+					"name": "progression_mode",
+					"description": "次の問題への進行・スキップの方式 [デフォルト: 参加者の投票]",
+					"choices": { "host": "主催者のみ", "vote": "参加者の投票 (過半数)" }
+				},
+				"ready_threshold": {
+					"name": "ready_threshold",
+					"description": "クイズ開始に必要な準備完了の条件 [デフォルト: 過半数]",
+					"choices": { "all": "全員", "majority": "過半数" }
 				}
 			}
 		},
