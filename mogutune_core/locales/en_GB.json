@@ -121,6 +121,7 @@
 		"msg.q.init.description": "- {0}\n- Number of questions: `{1}`\n- Players\n{2}",
 		"msg.q.init.description.playlist_type.playlist": "Playlist",
 		"msg.q.init.description.playlist_type.album": "Album",
+		"msg.q.init.lufs_progress": "Analyzing loudness... ({0}/{1})",
 		"msg.q.init.must_be_at_least_two_songs": "There must be at least 2 songs!\n(Duplicate songs will be excluded if present in the playlist)",
 		"msg.q.init.not_enough_song": "The number of songs (`{0}`) must exceed the number of questions (`{1}`)!\n(Duplicate songs will be excluded if present in the playlist)",
 		"msg.q.start.title": "Question {0}",
