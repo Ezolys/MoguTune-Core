@@ -77,6 +77,11 @@
 		"cmd.play.query_url_platform.soundcloud": "SoundCloud",
 		"cmd.play.ranking.point": "point",
 		"cmd.play.ranking.points": "points",
+		"cmd.leaderboard.result.title": "Leaderboard",
+		"cmd.leaderboard.result.empty": "No records yet... play a quiz first!",
+		"cmd.leaderboard.result.line": "{0} {1}: **`{2}`** correct (`{3}%` accuracy)",
+		"cmd.leaderboard.result.you": "You: rank **{0}** (`{1}` correct / `{2}%` accuracy)",
+		"cmd.leaderboard.result.no_record": "You have no records yet",
 		"cmd.sessions.result.title": "Quiz Session Status",
 		"cmd.sessions.result.current": "Live quiz session",
 		"cmd.sessions.result.limit_none": "Unlimited",
@@ -124,6 +129,7 @@
 		"msg.q.init.lufs_progress": "Analyzing loudness... ({0}/{1})",
 		"msg.q.init.must_be_at_least_two_songs": "There must be at least 2 songs!\n(Duplicate songs will be excluded if present in the playlist)",
 		"msg.q.init.not_enough_song": "The number of songs (`{0}`) must exceed the number of questions (`{1}`)!\n(Duplicate songs will be excluded if present in the playlist)",
+		"msg.q.others": "and {0} more",
 		"msg.q.start.title": "Question {0}",
 		"msg.q.start.description": "Press the answer button to answer!",
 		"msg.q.answer.correct.title": "Correct!",
@@ -138,6 +144,9 @@
 		"msg.q.end.title": "Quiz Ended",
 		"msg.q.end.description": "<Results>\n{0}",
 		"msg.q.end.no_players": "No players... 🥲",
+		"msg.q.end.questions.title": "Correct answers by question",
+		"msg.q.end.questions.line": "`{0}`. {1} - {2}",
+		"msg.q.end.questions.nobody": "No one",
 		"msg.q.answer.title": "Answer",
 		"msg.q.answer.description": "Please answer!",
 		"msg.q.skip.title": "Skip",
@@ -189,7 +198,17 @@
 		},
 		"sessions": {
 			"name": "sessions",
-			"description": "Displays the number of quiz sessions currently being run by this bot."
+			"description": "Displays the number of quiz sessions currently running on this bot."
+		},
+		"leaderboard": {
+			"name": "leaderboard",
+			"description": "Displays the quiz leaderboard for this server.",
+			"options": {
+				"limit": {
+					"name": "limit",
+					"description": "Number of entries to show (1-25) [Default: 10]"
+				}
+			}
 		},
 		"settings": {
 			"name": "settings",

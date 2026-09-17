@@ -77,6 +77,11 @@
 		"cmd.play.query_url_platform.soundcloud": "SoundCloud",
 		"cmd.play.ranking.point": "点",
 		"cmd.play.ranking.points": "点",
+		"cmd.leaderboard.result.title": "リーダーボード",
+		"cmd.leaderboard.result.empty": "まだ記録がありません...まずはクイズをプレイしましょう！",
+		"cmd.leaderboard.result.line": "{0} {1}: **`{2}`** 正解 (正解率 `{3}%`)",
+		"cmd.leaderboard.result.you": "あなた: **{0}** 位 (`{1}` 正解 / 正解率 `{2}%`)",
+		"cmd.leaderboard.result.no_record": "あなたの記録はまだありません",
 		"cmd.sessions.result.title": "クイズセッション状況",
 		"cmd.sessions.result.current": "実行中のクイズセッション",
 		"cmd.sessions.result.limit_none": "無制限",
@@ -124,6 +129,7 @@
 		"msg.q.init.lufs_progress": "ラウドネス解析中... ({0}/{1})",
 		"msg.q.init.must_be_at_least_two_songs": "楽曲数は2曲以上である必要があります！\n(重複した楽曲がプレイリストに含まれている場合は除外されます)",
 		"msg.q.init.not_enough_song": "楽曲数 (`{0}`) は問題数 (`{1}`) を上回る必要があります！\n(重複した楽曲がプレイリストに含まれている場合は除外されます)",
+		"msg.q.others": "他 {0} 人",
 		"msg.q.start.title": "{0}問目",
 		"msg.q.start.description": "解答ボタンを押して解答！",
 		"msg.q.answer.correct.title": "正解！",
@@ -138,6 +144,9 @@
 		"msg.q.end.title": "クイズ終了",
 		"msg.q.end.description": "＜結果＞\n{0}",
 		"msg.q.end.no_players": "プレイヤーがいません... 🥲",
+		"msg.q.end.questions.title": "問題ごとの正解者",
+		"msg.q.end.questions.line": "`{0}`. {1} - {2}",
+		"msg.q.end.questions.nobody": "正解者なし",
 		"msg.q.answer.title": "解答",
 		"msg.q.answer.description": "解答してください！",
 		"msg.q.skip.title": "スキップ",
@@ -190,6 +199,16 @@
 		"sessions": {
 			"name": "sessions",
 			"description": "現在のこのボットが実行しているクイズのセッション数を表示します。"
+		},
+		"leaderboard": {
+			"name": "leaderboard",
+			"description": "このサーバーのクイズのリーダーボードを表示します。",
+			"options": {
+				"limit": {
+					"name": "limit",
+					"description": "表示する件数 (1~25) [デフォルト: 10]"
+				}
+			}
 		},
 		"settings": {
 			"name": "settings",
