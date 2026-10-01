@@ -14,6 +14,10 @@
 		"cmd.start.not_specified_voice_channel": "Please connect to a voice channel before starting the quiz.",
 		"cmd.start.already_started": "A quiz has already started in {0} on this server.",
 		"cmd.start.limit_reached": "The session limit has been reached, so no more quizzes can be started.\nPlease try again later.",
+		"cmd.start.maintenance_mode": "MoguTune is currently under maintenance. You cannot start a quiz right now. Please try again later.",
+		"cmd.maintenance.on": "enabled",
+		"cmd.maintenance.off": "disabled",
+		"cmd.maintenance.updated": "Maintenance mode has been {0}.",
 		"cmd.start.started.title": "Quiz Started",
 		"cmd.start.started.description": "A quiz has started in {0}.",
 		"cmd.end.ended": "The quiz in {0} has ended.",
@@ -314,6 +318,20 @@
 				"playlist": {
 					"name": "playlist",
 					"description": "Playlist to display"
+				}
+			}
+		},
+		"maintenance": {
+			"name": "maintenance",
+			"description": "Toggle maintenance mode (bot owner only)",
+			"options": {
+				"enabled": {
+					"name": "enabled",
+					"description": "Whether to enable maintenance mode"
+				},
+				"message": {
+					"name": "message",
+					"description": "Optional message shown when a quiz is started"
 				}
 			}
 		}
