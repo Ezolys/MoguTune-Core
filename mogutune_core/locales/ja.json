@@ -52,6 +52,12 @@
 		"cmd.playlist.new.created_empty": "空のプレイリストを作成しました！\n- 名前: **{0}**\n- 曲数: `0` 曲\n(`playlist add` で楽曲を追加できます)",
 		"cmd.playlist.add.result": "プレイリストに楽曲を追加しました。\n- 追加: `{0}` 曲\n- スキップ: `{1}` 曲",
 		"cmd.playlist.add.error.no_valid_tracks": "有効な楽曲が見つかりませんでした。\n単一トラックのURLを指定してください。",
+		"cmd.playlist.add.registered": "プレイリストを登録しました！\n- 名前: **{0}**\n- 曲数: `{1}` 曲\n- URL: {2}",
+		"cmd.playlist.add.error.already_registered": "このプレイリストは既に登録されています。",
+		"cmd.playlist.list.title": "登録済みプレイリスト",
+		"cmd.playlist.list.line": "- [**{0}**]({2}) (`{1}` 曲)",
+		"cmd.playlist.list.empty": "プレイリストが登録されていません。`/preset add` で登録できます。",
+		"cmd.playlist.list.not_author": "このボタンはコマンド実行者だけが操作できます。",
 		"cmd.playlist.edit.updated": "プレイリストを更新しました！",
 		"cmd.playlist.edit.nothing_specified": "変更する項目を指定してください。",
 		"cmd.playlist.delete.deleted": "プレイリストを削除しました。",
@@ -61,6 +67,7 @@
 		"cmd.playlist.detail.author": "作成者",
 		"cmd.playlist.detail.created_at": "作成日",
 		"cmd.playlist.detail.track_count": "曲数",
+		"cmd.playlist.detail.url": "URL",
 		"cmd.playlist.detail.tracks": "楽曲一覧",
 		"cmd.playlist.detail.tracks_empty": "楽曲が登録されていません。",
 		"cmd.playlist.detail.tracks_more": "他 {0} 曲...",
@@ -312,6 +319,70 @@
 			}
 		},
 		"playlist detail": {
+			"name": "detail",
+			"description": "プレイリストの詳細を表示します。",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "表示対象のプレイリスト"
+				}
+			}
+		},
+		"preset": {
+			"name": "preset",
+			"description": "お気に入りのプレイリストを登録・管理します。"
+		},
+		"preset add": {
+			"name": "add",
+			"description": "お気に入りのプレイリストを登録します。",
+			"options": {
+				"url": {
+					"name": "url",
+					"description": "登録するプレイリストのURL (YouTube, Spotify, SoundCloud)"
+				},
+				"name": {
+					"name": "name",
+					"description": "表示名 (省略時はプレイリストのタイトル)"
+				},
+				"description": {
+					"name": "description",
+					"description": "説明"
+				}
+			}
+		},
+		"preset list": {
+			"name": "list",
+			"description": "登録済みのプレイリスト一覧を表示します。"
+		},
+		"preset edit": {
+			"name": "edit",
+			"description": "プレイリストの名前・説明を編集します。",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "編集対象のプレイリスト"
+				},
+				"name": {
+					"name": "name",
+					"description": "新しい名前"
+				},
+				"description": {
+					"name": "description",
+					"description": "新しい説明"
+				}
+			}
+		},
+		"preset delete": {
+			"name": "delete",
+			"description": "プレイリストの登録を解除します。",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "登録を解除するプレイリスト"
+				}
+			}
+		},
+		"preset detail": {
 			"name": "detail",
 			"description": "プレイリストの詳細を表示します。",
 			"options": {

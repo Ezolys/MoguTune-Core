@@ -52,6 +52,12 @@
 		"cmd.playlist.new.created_empty": "Empty playlist created!\n- Name: **{0}**\n- Tracks: `0`\n(Add tracks with `playlist add`)",
 		"cmd.playlist.add.result": "Added tracks to the playlist.\n- Added: `{0}`\n- Skipped: `{1}`",
 		"cmd.playlist.add.error.no_valid_tracks": "No valid tracks found.\nPlease specify single-track URLs.",
+		"cmd.playlist.add.registered": "Playlist registered!\n- Name: **{0}**\n- Tracks: `{1}`\n- URL: {2}",
+		"cmd.playlist.add.error.already_registered": "This playlist is already registered.",
+		"cmd.playlist.list.title": "Registered Playlists",
+		"cmd.playlist.list.line": "- [**{0}**]({2}) (`{1}` tracks)",
+		"cmd.playlist.list.empty": "No playlists registered yet. Use `/preset add` to register one.",
+		"cmd.playlist.list.not_author": "Only the command author can use these buttons.",
 		"cmd.playlist.edit.updated": "Playlist updated!",
 		"cmd.playlist.edit.nothing_specified": "Please specify an item to change.",
 		"cmd.playlist.delete.deleted": "Playlist deleted.",
@@ -61,6 +67,7 @@
 		"cmd.playlist.detail.author": "Author",
 		"cmd.playlist.detail.created_at": "Created",
 		"cmd.playlist.detail.track_count": "Tracks",
+		"cmd.playlist.detail.url": "URL",
 		"cmd.playlist.detail.tracks": "Track List",
 		"cmd.playlist.detail.tracks_empty": "No tracks registered.",
 		"cmd.playlist.detail.tracks_more": "and {0} more...",
@@ -312,6 +319,70 @@
 			}
 		},
 		"playlist detail": {
+			"name": "detail",
+			"description": "Displays the details of a playlist.",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "Playlist to display"
+				}
+			}
+		},
+		"preset": {
+			"name": "preset",
+			"description": "Register and manage favorite playlists."
+		},
+		"preset add": {
+			"name": "add",
+			"description": "Registers a favorite playlist.",
+			"options": {
+				"url": {
+					"name": "url",
+					"description": "URL of the playlist to register (YouTube, Spotify, SoundCloud)"
+				},
+				"name": {
+					"name": "name",
+					"description": "Display name (defaults to the playlist title)"
+				},
+				"description": {
+					"name": "description",
+					"description": "Description"
+				}
+			}
+		},
+		"preset list": {
+			"name": "list",
+			"description": "Displays the list of registered playlists."
+		},
+		"preset edit": {
+			"name": "edit",
+			"description": "Edits the name and description of a playlist.",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "Playlist to edit"
+				},
+				"name": {
+					"name": "name",
+					"description": "New name"
+				},
+				"description": {
+					"name": "description",
+					"description": "New description"
+				}
+			}
+		},
+		"preset delete": {
+			"name": "delete",
+			"description": "Unregisters a playlist.",
+			"options": {
+				"playlist": {
+					"name": "playlist",
+					"description": "Playlist to unregister"
+				}
+			}
+		},
+		"preset detail": {
 			"name": "detail",
 			"description": "Displays the details of a playlist.",
 			"options": {
