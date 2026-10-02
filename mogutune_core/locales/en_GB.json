@@ -1,6 +1,6 @@
 {
 	"strings": {
-		"name": "English (GB)",
+		"name": "English",
 		"embed.donate.title": "Would you like to support MoguTune's development?",
 		"embed.donate.description": "Thank you for always using MoguTune!\nThe development of this bot and the operation of its server are supported by your contributions.\n\nIf you'd like, please consider supporting future development!\n### - [GitHub Sponsors](https://github.com/sponsors/Milkeyyy)\n\n(Your support will be used for server maintenance costs and to maintain development motivation.)",
 		"embed.success.title": "Completed",
@@ -25,7 +25,7 @@
 		"cmd.end.do_not_have_permission": "You are not the host of this quiz, so you cannot end it!",
 		"cmd.end.stale_disconnected": "No quiz was running, but the lingering voice connection has been disconnected.",
 		"cmd.play.preparing.title": "Preparing",
-		"cmd.play.preparing.description": "Preparing the quiz...\nPlease wait a moment...",
+		"cmd.play.preparing.description": "Loading song...\nPlease wait a moment...",
 		"cmd.play.preparing_complete.title": "Preparation Complete!",
 		"cmd.play.preparing_complete.description": "Quiz preparation is complete!\nStarting now...\n\nVoice Channel: {0}",
 		"cmd.play.no_query": "Please specify a playlist URL or a preset.",
@@ -184,7 +184,7 @@
 	"commands": {
 		"ping": {
 			"name": "ping",
-			"description": "Ping!!!"
+			"description": "Displays the Discord Gateway response time for this bot."
 		},
 		"about": {
 			"name": "about",
@@ -196,7 +196,7 @@
 			"options": {
 				"query": {
 					"name": "query",
-					"description": "URL of the playlist to use for the quiz (YouTube, Spotify, SoundCloud)"
+					"description": "URL of the playlist to use for the quiz (YouTube, Spotify, SoundCloud, Bandcamp)"
 				},
 				"q_count": {
 					"name": "q_count",
