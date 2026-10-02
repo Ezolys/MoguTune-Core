@@ -164,6 +164,7 @@
 		"msg.q.end.no_players": "プレイヤーがいません... 🥲",
 		"msg.q.end.questions.title": "＜問題ごとの正解者＞",
 		"msg.q.end.questions.line": "{0}. `{1}` - {2}",
+		"msg.q.end.questions.line_link": "{0}. [`{1}`]({2}) - {3}",
 		"msg.q.end.questions.nobody": "正解者なし",
 		"msg.q.answer.title": "解答",
 		"msg.q.answer.description": "解答してください！",

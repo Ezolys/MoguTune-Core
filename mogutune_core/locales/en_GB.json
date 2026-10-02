@@ -164,6 +164,7 @@
 		"msg.q.end.no_players": "No players... 🥲",
 		"msg.q.end.questions.title": "<Correct answers by question>",
 		"msg.q.end.questions.line": "{0}. `{1}` - {2}",
+		"msg.q.end.questions.line_link": "{0}. [`{1}`]({2}) - {3}",
 		"msg.q.end.questions.nobody": "No one",
 		"msg.q.answer.title": "Answer",
 		"msg.q.answer.description": "Please answer!",
