@@ -109,7 +109,7 @@
 		"cmd.settings.set.no_items": "There are no configurable items yet.",
 		"cmd.settings.set.no_options": "Please specify an item to change.",
 		"cmd.settings.set.updated": "Settings updated.",
-		"cmd.settings.item.artist_in_answers": "Include artist names in answer choices",
+		"cmd.settings.item.artist_in_answers": "Include artist names in answer choices (excluding YouTube)",
 		"cmd.settings.value.enabled": "On",
 		"cmd.settings.value.disabled": "Off",
 		"ctxcmd.play.no_valid_url": "No valid URL found in the message.",
@@ -246,7 +246,7 @@
 			"options": {
 				"artist_in_answers": {
 					"name": "artist_in_answers",
-					"description": "Whether to include artist names in answer choices [Default: Off]"
+					"description": "Whether to include artist names in answer choices (excluding YouTube) [Default: Off]"
 				},
 				"progression_mode": {
 					"name": "progression_mode",
