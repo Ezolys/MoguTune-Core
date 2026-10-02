@@ -92,8 +92,14 @@
 		"cmd.leaderboard.result.description": "(The cumulative score since the bot joined the server is displayed.)",
 		"cmd.leaderboard.result.empty": "No records yet... play a quiz first!",
 		"cmd.leaderboard.result.line": "{0} {1}: **`{2}`** correct / `{3}`% accuracy",
-		"cmd.leaderboard.result.you": "You: rank {0} ({1} correct / {2}% accuracy)",
-		"cmd.leaderboard.result.no_record": "You have no records yet",
+		"cmd.stats.result.title": "Your Stats",
+		"cmd.stats.result.rank": "Rank",
+		"cmd.stats.result.rank_value": "#{0}",
+		"cmd.stats.result.correct": "Total correct answers",
+		"cmd.stats.result.questions": "Total questions participated",
+		"cmd.stats.result.accuracy": "Accuracy",
+		"cmd.stats.result.quizzes": "Total quizzes participated",
+		"cmd.stats.result.no_record": "You have no records yet",
 		"cmd.sessions.result.title": "Quiz Session Status",
 		"cmd.sessions.result.current": "Live quiz session",
 		"cmd.sessions.result.limit_none": "Unlimited",
@@ -221,6 +227,10 @@
 					"description": "Number of entries to show (1-25) [Default: 10]"
 				}
 			}
+		},
+		"stats": {
+			"name": "stats",
+			"description": "Displays your quiz stats."
 		},
 		"settings": {
 			"name": "settings",

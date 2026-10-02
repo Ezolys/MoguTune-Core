@@ -92,8 +92,14 @@
 		"cmd.leaderboard.result.description": "(ボットがサーバーに参加してからの累計スコアが表示されています)",
 		"cmd.leaderboard.result.empty": "まだ記録がありません...まずはクイズをプレイしましょう！",
 		"cmd.leaderboard.result.line": "{0} {1}: 正解数 **`{2}`** / 正解率 `{3}`%",
-		"cmd.leaderboard.result.you": "あなた: {0} 位 (正解数 {1} / 正解率 {2}%)",
-		"cmd.leaderboard.result.no_record": "あなたの記録はまだありません",
+		"cmd.stats.result.title": "あなたの統計",
+		"cmd.stats.result.rank": "順位",
+		"cmd.stats.result.rank_value": "{0} 位",
+		"cmd.stats.result.correct": "累計正解数",
+		"cmd.stats.result.questions": "累計参加問題数",
+		"cmd.stats.result.accuracy": "正解率",
+		"cmd.stats.result.quizzes": "累計参加クイズ数",
+		"cmd.stats.result.no_record": "あなたの記録はまだありません",
 		"cmd.sessions.result.title": "クイズセッション状況",
 		"cmd.sessions.result.current": "実行中のクイズセッション",
 		"cmd.sessions.result.limit_none": "無制限",
@@ -221,6 +227,10 @@
 					"description": "表示する件数 (1~25) [デフォルト: 10]"
 				}
 			}
+		},
+		"stats": {
+			"name": "stats",
+			"description": "あなたのクイズ統計を表示します。"
 		},
 		"settings": {
 			"name": "settings",
